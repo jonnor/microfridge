@@ -46,7 +46,8 @@ TODO
 * Docs: add pictures of fridge
 * Docs: add schematics/wiring diagrams
 * Make conceptual model interactive, connected to live system
-* Flowhub: Support for showing conceptual model as "preview"
+* Flowhub: Support for showing conceptual model as "preview".
+Build MicroFlo runtime comm as HTML, run in iframe, use post-message for forwarding?
 * Add support for door switch + light
 * Add links to 3d-models in conceptual model
 

@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="112.12897"
-     inkscape:cy="518.45073"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="137.20036"
+     inkscape:cy="682.66527"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -81,11 +81,12 @@
          style="opacity:1;fill:#000000;fill-opacity:0.95121951;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <text
          sodipodi:linespacing="125%"
-         id="text4138"
+         id="target_temp"
          y="201.81377"
          x="80.812172"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
+         xml:space="preserve"
+         inkscape:label="#text4138"><tspan
            y="201.81377"
            x="80.812172"
            id="tspan4140"
@@ -95,8 +96,9 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="82.832497"
          y="244.24019"
-         id="text4142"
-         sodipodi:linespacing="125%"><tspan
+         id="actual_temp"
+         sodipodi:linespacing="125%"
+         inkscape:label="#text4142"><tspan
            sodipodi:role="line"
            id="tspan4144"
            x="82.832497"
@@ -114,11 +116,12 @@
     </g>
     <rect
        style="opacity:1;fill:#00ff00;fill-opacity:0.4679803;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4154"
+       id="cooling_indicator"
        width="36.36549"
        height="38.385796"
        x="272.74121"
-       y="203.83406" />
+       y="203.83406"
+       inkscape:label="#rect4154" />
   </g>
   <g
      inkscape:groupmode="layer"
