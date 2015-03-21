@@ -1,0 +1,8 @@
+package.json
+spec/thermostat.coffee
+README.md
+doc/braindump.md
+doc/system-model.svg
+preview/index.html
+preview/microfridge-ui.coffee
+preview/microfridge-ui.css

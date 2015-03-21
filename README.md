@@ -34,12 +34,14 @@ TODO
 
 0.2
 
+* WebInterface: Serve a static system model, with links
 * MicroFlo: IP-based transport for FBCS protocol
 * MicroFlo: Add support for Flowhub live-mode
-* Add NFC tag with Flowhub live-mode URL
-* Ability to see current temp over webinterface
+* WebInterface: Add NFC tag with link
+* WebInterface: Add Flowhub live-mode URL
+* WebInterface: Ability to see current temp
 * MicroFlo: Support persistence graph changes
-* Ability to change target temp in webinterface
+* WebInterface: Ability to change target temp
 * Docs: Conceptual system model
 * Docs: add pictures of fridge
 * Docs: add schematics/wiring diagrams
