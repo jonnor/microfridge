@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "coffee-script": "^1.7.1",
-    "microflo": "^0.3.23"
+    "microflo": "^0.3.23",
+    "microflo-core": "^0.3.23"
   },
   "devDependencies": {
     "chai": "~1.8.0",
