@@ -54,6 +54,7 @@ Build MicroFlo runtime comm as HTML, run in iframe, use post-message for forward
 Later
 
 * MicroFlo: Port hysteresis component to use [Finito](http://finitosm.org)
+* Expose outputs as MQTT, use [msgflo](http://github.com/the-grid/msgflo) to wire into bigger system
 
 Maybe
 
