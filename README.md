@@ -13,29 +13,33 @@ The goals of this iteration is to
 * Support creating and debugging the program in [Flowhub](http://flowhub.io) visual programming IDE
 * Push MicroFlo onwards, especially for IoT-type devices
 
-
 Status
 --------
 Just words.
 
+DONE
+-----
+* Initial support for ESP8266 devices for MicroFlo
 
 TODO
 -----
 
 0.1
 
-* MicroFlo: Hardware adaptation for ESP8266 chip
+* Tests: BDD test of fridge flow running on Emscripten MicroFlo backend
 * Port over existing fridge flow from
 [MicroFlo/examples/fridge.fbp](https://github.com/microflo/microflo/blob/master/examples/fridge.fbp)
-* MicroFlo: add `build` command, for building firmware after doing `generate`
-* Tests: BDD test of fridge flow running on Emscripten MicroFlo backend
+* Port required DS18s20 component to ESP8266. Example code
+[1](http://tech.scargill.net/esp8266-and-the-dallas-ds18b20-and-ds18b20p/),
+[2](https://github.com/nekromant/esp8266-frankenstein/blob/master/src/cmd_ds18b20.c)
+* MicroFlo: add `build` command, for building firmware after doing `generate`?
 * Design and 3d-print mount/installing
 * Move into production, replacing version 1 system
 
 0.2
 
 * WebInterface: Serve a static system model, with links
-* MicroFlo: IP-based transport for FBCS protocol
+* MicroFlo: IP-based transport for FBCS protocol (MQTT?)
 * MicroFlo: Add support for Flowhub live-mode
 * WebInterface: Add NFC tag with link
 * WebInterface: Add Flowhub live-mode URL
