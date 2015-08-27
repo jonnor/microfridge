@@ -1,0 +1,29 @@
+name: "Thermostat"
+topic: "core/Frigde"
+skip: |
+ Should mock/inject a fake temperature
+ then verify the state on the output pin
+fixture:
+ type: 'fbp'
+ data: |
+  INPORT=it.IN:IN
+  OUTPORT=f.OUT:OUT
+  it(core/Repeat) OUT -> IN f(core/Repeat)
+
+cases:
+-
+  name: 'temperature too high'
+  assertion: 'should turn cooler on'
+  inputs:
+    temperature: 6
+  expect:
+    cooler:
+      equals: false
+-
+  name: 'temperature low enough'
+  assertion: 'should turn cooler ff'
+  inputs:
+    temperature: 3
+  expect:
+    cooler:
+      equals: true
