@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/jonnor/microfridge.svg?branch=master)](https://travis-ci.org/jonnor/microfridge)
 
 MicroFridge
 ============
