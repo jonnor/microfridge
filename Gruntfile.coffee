@@ -5,7 +5,7 @@ microflo = (target) ->
         target
         "BUILD_DIR=build"
         "MICROFLO=./node_modules/.bin/microflo"
-        "GRAPH=graph.fbp"
+        "GRAPH=graphs/fridge.fbp"
         "MICROFLO_SOURCE_DIR=`pwd`/node_modules/microflo/microflo"
         "LIBRARY=microflo-core/components/arduino-standard.json"
     ]
