@@ -1,3 +1,12 @@
+# Exported ports
+# For observing state, and changing config
+INPORT=timer.ENABLE:ENABLE
+INPORT=thermometer.IN:FAKETEMPERATURE
+INPORT=hystresis.LOWTHRESHOLD:LOW
+INPORT=hystresis.LOWTHRESHOLD:HIGH
+OUTPORT=thermometer.OUT:TEMPERATURE
+OUTPORT=turnOn.OUT:COOLER
+
 # Thermostat
 timer(Timer) OUT -> TRIGGER thermometer(ReadDallasTemperature)
 thermometer() OUT -> IN hysteresis(HysteresisLatch)
