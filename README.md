@@ -16,6 +16,7 @@ The goals of this iteration are to
 * Push MicroFlo forward using a real-world example
 * Explore the idea of ['introspectable computing'](https://github.com/jonnor/projects/tree/master/introspectable-computing)
 applied to household appliances
+* Try out using SVG+JS to build interactive system models
 
 Status
 --------
@@ -23,7 +24,8 @@ Just words.
 
 DONE
 -----
-* Initial support for ESP8266 devices for MicroFlo
+* MicroFlo: Basic support for ESP8266 devices
+* MicroFlo: Initial support for MQTT (on Linux)
 
 TODO
 -----
@@ -64,7 +66,6 @@ Later
 
 * MicroFlo: Support persistence graph changes
 * MicroFlo: Port hysteresis component to use [Finito](http://finitosm.org)
-* Expose outputs as MQTT, use [msgflo](http://github.com/the-grid/msgflo) to wire into bigger system
 
 Maybe
 
