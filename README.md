@@ -8,11 +8,14 @@ running on [Olimex ESP8266](https://www.olimex.com/Products/IoT/ESP8266-EVB).
 
 This is version 2 of the
 [MicroFlo+Arduino-based fridge](http://www.jonnor.com/2013/09/microflo-0-1-0-and-an-arduino-powered-fridge/).
-The goals of this iteration is to
+The goals of this iteration are to
 
 * Integrate electronics into the fridge itself
 * Support creating and debugging the program in [Flowhub](http://flowhub.io) visual programming IDE
-* Push MicroFlo onwards, especially for IoT-type devices
+* Have the state of the device observable and configurable. Using MQTT and [MsgFlo](http://msgflo.org)
+* Push MicroFlo forward using a real-world example
+* Explore the idea of ['introspectable computing'](https://github.com/jonnor/projects/tree/master/introspectable-computing)
+applied to household appliances
 
 Status
 --------
@@ -25,28 +28,29 @@ DONE
 TODO
 -----
 
-0.1
+0.1 - minimally works
 
-* Tests: BDD test of fridge flow running on Emscripten MicroFlo backend
+* Tests: BDD test of fridge flow running on Emscripten or Linux MicroFlo backend
 * Port over existing fridge flow from
 [MicroFlo/examples/fridge.fbp](https://github.com/microflo/microflo/blob/master/examples/fridge.fbp)
 * Port required DS18s20 component to ESP8266. Example code
 [1](http://tech.scargill.net/esp8266-and-the-dallas-ds18b20-and-ds18b20p/),
 [2](https://github.com/nekromant/esp8266-frankenstein/blob/master/src/cmd_ds18b20.c)
-* MicroFlo: add `build` command, for building firmware after doing `generate`?
+* Graph exposed over MQTT/MsgFlo, can observe state and manipulate configuration
 * Design and 3d-print mount/installing
 * Move into production, replacing version 1 system
 
-0.2
+0.2 - basic webinterface
 
 * WebInterface: Serve a static system model, with links
-* MicroFlo: IP-based transport for FBCS protocol (MQTT?)
-* MicroFlo: Add support for Flowhub live-mode
-* WebInterface: Add NFC tag with link
-* WebInterface: Add Flowhub live-mode URL
 * WebInterface: Ability to see current temp
-* MicroFlo: Support persistence graph changes
 * WebInterface: Ability to change target temp
+* Add NFC tag with link to webinterface
+* WebInterface: Add Flowhub live-mode URL (for MsgFlo network)?
+
+0.3 - interactive system model
+
+* MicroFlo: Support FBP protocol onto device (via web or MQTT/MsgFlo forwarding)
 * Docs: Conceptual system model
 * Docs: add pictures of fridge
 * Docs: add schematics/wiring diagrams
@@ -58,6 +62,7 @@ Build MicroFlo runtime comm as HTML, run in iframe, use post-message for forward
 
 Later
 
+* MicroFlo: Support persistence graph changes
 * MicroFlo: Port hysteresis component to use [Finito](http://finitosm.org)
 * Expose outputs as MQTT, use [msgflo](http://github.com/the-grid/msgflo) to wire into bigger system
 
